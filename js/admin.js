@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         window.location.href = "./../public/index.html"
     }
 
-    const response = await fetch('http://localhost:3000/api/getUsers', {
+    const response = await fetch('https:/f157-181-54-0-83.ngrok-free.app/api/getUsers', {
         headers: {
             "Authorization": "Bearer "+ token
         }
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", async() => {
         
         const token = localStorage.getItem('token');
         
-        const response = await fetch(`http://localhost:3000/api/user/update/${id}`, {
+        const response = await fetch(`https:/f157-181-54-0-83.ngrok-free.app/api/user/update/${id}`, {
             headers: {
                 "Authorization": "Bearer "+ token,
                 "content-type": "application/json"
@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", async() => {
 
         const token = localStorage.getItem('token');
 
-        const response = await fetch(`http://localhost:3000/api/user/delete/${id}`, {
+        const response = await fetch(`https:/f157-181-54-0-83.ngrok-free.app/api/user/delete/${id}`, {
             headers: {
                 "Authorization": "Bearer "+ token,
                 "content-type": "application/json"
